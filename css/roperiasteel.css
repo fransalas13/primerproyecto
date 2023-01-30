@@ -13,13 +13,14 @@ body{
 	width: 100%;	
 	height:20vh;
 	padding: 5vh 0 2vh 0;
+	justify-content: space-between;
 }
 
 .logo{
 	width: 10vw;
 	height: 12vh;
 	float: left;
-	background-color: rgb(236, 240, 241);	
+		
 
 }
 .logo img{
@@ -33,21 +34,27 @@ body{
 	padding-right: 0;
 	width:88%;
 	height: 5em;
-	background-color: aquamarine;
+	background-color: rgba(172, 176, 58, 1.0);
 	display: flex;
-	justify-content: Center;
 }
 
 .menu ul li {
 	list-style: none;
-	float:left;	
+	display: inline-block;
 }
+.menu .menu-principal{
+	width: 80%;
+	height: 3vh;
+	justify-items: center;
+}
+.menu ul .item {
 
-.menu .item {
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 24px;
-	border-width: 20px;
+	width: 30vw;
+	background: green;
+	border-radius: 2px;
 	
 }
 .menu .item a{
@@ -64,9 +71,10 @@ a{
 	flex-direction: column;
 }
 
-.menu ul .sub-menu li {
+.menu ul .sub-menu > li {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	justify-content: center;
 }
 
